@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowCam : MonoBehaviour{
+public class FollowCam : MonoBehaviour
+{
     static public GameObject POI;
 
     [Header("Inscribed")]
@@ -13,28 +12,33 @@ public class FollowCam : MonoBehaviour{
     [Header("Dynamic")]
     public float camZ;
 
-    void Awake(){
-        camZ = this. transform.position.z;
+    void Awake()
+    {
+        camZ = this.transform.position.z;
     }
 
-    void FixedUpdate(){
+    void FixedUpdate()
+    {
         Vector3 destination = Vector3.zero;
 
-        if(POI!= null){
+        if (POI != null)
+        {
 
             Rigidbody poiRigid = POI.GetComponent<Rigidbody>();
-            if ((poiRigid != null) && poiRigid.IsSleeping()){
+            if ((poiRigid != null) && poiRigid.IsSleeping())
+            {
                 POI = null;
             }
         }
 
-        if(POI != null){
+        if (POI != null)
+        {
             destination = POI.transform.position;
         }
-    //    if(POI == null) return;
+        //    if(POI == null) return;
 
-    //    Vector3 destination = POI.transform.position;
-    
+        //    Vector3 destination = POI.transform.position;
+
         destination.x = Mathf.Max(minXY.x, destination.x);
         destination.y = Mathf.Max(minXY.y, destination.y);
 

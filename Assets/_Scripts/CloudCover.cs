@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CloudCover : MonoBehaviour{
+public class CloudCover : MonoBehaviour
+{
     [Header("Inscribed")]
     public Sprite[] cloudSprites;
     public int numClouds = 40;
@@ -13,13 +12,15 @@ public class CloudCover : MonoBehaviour{
 
 
     // Start is called before the first frame update
-    void Start(){
+    void Start()
+    {
         Transform parentTrans = this.transform;
         GameObject cloudGo;
         Transform cloudTrans;
         SpriteRenderer sRend;
         float scaleMult;
-        for (int i = 0; i < numClouds; i++){
+        for (int i = 0; i < numClouds; i++)
+        {
             cloudGo = new GameObject();
             cloudTrans = cloudGo.transform;
             sRend = cloudGo.AddComponent<SpriteRenderer>();
@@ -33,14 +34,15 @@ public class CloudCover : MonoBehaviour{
             scaleMult = Random.Range(scaleRange.x, scaleRange.y);
             cloudTrans.localScale = Vector3.one * scaleMult;
         }
-        
+
     }
 
-    Vector3 RandomPos(){
+    Vector3 RandomPos()
+    {
         Vector3 pos = new Vector3();
-        pos.x = Random.Range( minPos.x, maxPos.x);
-        pos.y = Random.Range( minPos.y, maxPos.y);
-        pos.z = Random.Range( minPos.z, maxPos.z);
+        pos.x = Random.Range(minPos.x, maxPos.x);
+        pos.y = Random.Range(minPos.y, maxPos.y);
+        pos.z = Random.Range(minPos.z, maxPos.z);
         return pos;
     }
 
