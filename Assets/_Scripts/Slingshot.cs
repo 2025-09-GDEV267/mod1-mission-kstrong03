@@ -77,6 +77,16 @@ public class Slingshot : MonoBehaviour
             FollowCam.POI = projectile;
             Instantiate<GameObject>(projLinePrefab, projectile.transform);
             projectile = null;
+
+            if (Input.GetMouseButtonUp(0))
+            {
+            // The mouse has been released
+            FollowCam.POI = projectile;
+                projectile = null;
+                MissionDemolition.ShotFired();                             // a
+                //ProjectileLine.S.poi = projectile; bro i dont even know atp                        // b
+            }
         }
+    
     }
 }
