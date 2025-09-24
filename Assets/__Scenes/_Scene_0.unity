@@ -527,11 +527,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2123b4fdd9e1d7419b5e829c46413d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uitLevel: {fileID: 0}
-  uitShots: {fileID: 0}
-  uitButton: {fileID: 0}
-  castlePos: {x: 0, y: 0, z: 0}
-  castles: []
+  uitLevel: {fileID: 935578315}
+  uitShots: {fileID: 1411018520}
+  uitButton: {fileID: 1459399913}
+  castlePos: {x: 50, y: -9.5, z: 0}
+  castles:
+  - {fileID: 1714873935392641797, guid: 628813f436dc6354596b2ff03515386f, type: 3}
+  - {fileID: 1714873935392641797, guid: 86ad98cc12e32874a802d7255b36d26a, type: 3}
+  - {fileID: 1714873935392641797, guid: 555690264a272c644b814511361c40d3, type: 3}
+  - {fileID: 1714873935392641797, guid: 13f1b8adae1c4324aa1d1fc53dd9f7ba, type: 3}
+  - {fileID: 1714873935392641797, guid: b452a7e74c3f2fd498a31a278cd30c8c, type: 3}
   level: 0
   levelMax: 0
   shotsTaken: 0
@@ -1175,6 +1180,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 30, y: -30, z: 0}
+--- !u!1 &1953658550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1953658551}
+  m_Layer: 0
+  m_Name: ViewBoth
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1953658551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953658550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25, y: 25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1956282195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,3 +1427,4 @@ SceneRoots:
   - {fileID: 1314449733}
   - {fileID: 1956282199}
   - {fileID: 743351972}
+  - {fileID: 1953658551}
