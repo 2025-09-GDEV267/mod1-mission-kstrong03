@@ -10,6 +10,8 @@ public class ProjectileLine : MonoBehaviour
     private LineRenderer _line;
     private bool _drawing = true;
     private Projectile _projectile;
+    internal static object S;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -12,6 +12,8 @@ public class FollowCam : MonoBehaviour
     [Header("Dynamic")]
     public float camZ;
 
+    public static object S { get; internal set; }
+
     void Awake()
     {
         camZ = this.transform.position.z;
