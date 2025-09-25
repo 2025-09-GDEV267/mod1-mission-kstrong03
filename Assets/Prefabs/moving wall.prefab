@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3473018617044935966}
   - component: {fileID: 5043815810752864712}
   - component: {fileID: 1574994509198866009}
+  - component: {fileID: 2632355342688514516}
   m_Layer: 0
   m_Name: moving wall
   m_TagString: Untagged
@@ -61,10 +62,13 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6edb223d8763ece499b82122fcc6c513, type: 2}
+  - {fileID: 2100000, guid: 1bf90a43416e80840846a1b486b53b9e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,10 +118,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431584535366765058}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 4
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -146,3 +150,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 494e2acd07bd54e60a895e9e8fbed94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2632355342688514516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431584535366765058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b79b809bd5ec4746a3b7ca6f43ec7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delta: 1.5
+  speed: 2

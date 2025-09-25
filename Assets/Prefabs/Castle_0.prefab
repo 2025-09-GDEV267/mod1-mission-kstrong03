@@ -612,13 +612,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: moving wall
       objectReference: {fileID: 0}
+    - target: {fileID: 431584535366765058, guid: bec8f7d2548751644acd8c9d50cfe910, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3310015251940703217, guid: bec8f7d2548751644acd8c9d50cfe910, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3310015251940703217, guid: bec8f7d2548751644acd8c9d50cfe910, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.28
+      value: 15.76
       objectReference: {fileID: 0}
     - target: {fileID: 3310015251940703217, guid: bec8f7d2548751644acd8c9d50cfe910, type: 3}
       propertyPath: m_LocalPosition.z
@@ -656,6 +660,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 1bf90a43416e80840846a1b486b53b9e, type: 2}
+    - target: {fileID: 5043815810752864712, guid: bec8f7d2548751644acd8c9d50cfe910, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -686,6 +694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b79b809bd5ec4746a3b7ca6f43ec7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delta: 5
+  speed: 2
 --- !u!1001 &3212198579490262226
 PrefabInstance:
   m_ObjectHideFlags: 0

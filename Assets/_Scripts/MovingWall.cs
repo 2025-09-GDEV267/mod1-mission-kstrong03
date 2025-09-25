@@ -1,23 +1,22 @@
 using UnityEngine;
+using System.Collections;
 
 public class MovingWall : MonoBehaviour
 {
 
-    public float moveSpeed = 2f; //How fast it moves
-    public float moveRange = 5f; //The horizontal range of where it can move
+    public float delta = 1.5f;  // Amount to move left and right from the start point
+    public float speed = 2.0f;
+    private Vector3 startPos;
 
-    private Vector3 startPosition;
-    private bool movingRight = true;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        startPos = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        Vector3 v = startPos;
+        v.x += delta * Mathf.Sin(Time.time * speed);
+        transform.position = v;
     }
 }
